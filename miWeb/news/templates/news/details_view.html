@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="alert alert-light">
+    <h2>{{ post.title }}</h2><br>
+    <p size="29px" align="center">{{ post.description }}</p><br>
+    {{ post.author }}<br>
+    {{ post.date }}<br>
+    <a href="{% url 'news-update' post.id %}"><button class="btn">Update</button></a>
+    <a href="{% url 'news-delete' post.id %}"><button class="btn btn-r">Delete</button></a>
+</div>
+{% endblock content %}

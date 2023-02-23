@@ -1,0 +1,64 @@
+header{
+    max-width:450px;
+    margin:0 auto
+}
+
+.logo b{
+    color:#0D6EFD;
+    font-size:44px
+}
+.nav-link{
+    font-size:19px
+}
+.wrapper{
+    max-width:450px;
+    margin:0 auto;
+    padding-left:20px;
+    padding-right:20px
+
+}
+.btn{
+    border-color:#0d6efd;
+    color:#0d6efd
+}
+.btn:hover{
+    background:#0d6efd;
+    border-color:#0d6efd;
+    color:white
+}
+.alert{
+    width:100%;
+    margin:20px auto
+}
+.alert h2, .alert p{
+    text-align:center
+}
+
+.form-control{
+    width:100%;
+    margin:20px auto
+}
+
+textarea{
+    height:200px
+}
+
+.add-new{
+    text-align:center
+
+}
+
+.btn-r{
+    border:1px solid red;
+    color:red
+}
+
+.btn-r:hover{
+    border:1px solid red;
+    background:red;
+    color:white
+}
+
+@media(max-width:390px){
+
+}

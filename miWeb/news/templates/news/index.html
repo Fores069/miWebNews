@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    {% block title %}MainNews{% endblock title %}
+</head>
+<body>
+    {% block content %}
+        {% if news_list %}
+            {% for new in news_list %}
+                <div class="alert alert-secondary" role="alert">
+                        <h2>{{ new.title }}</h2>
+                        <p>{{ new.description }}</p>
+                        <h4>{{ new.author }}</h4>
+                        <a class="btn " href="{% url 'news-detail' new.id %}">Читать</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h3>Упс... Здесь пусто</h3>
+        {% endif %}
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Главная страница{% endblock title %}
+{% block content %}
+    <div class="features">
+        <h1>miPage</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores beatae consequuntur cupiditate deserunt distinctio eius esse excepturi, illo in ipsam iste laborum magni molestias nam, necessitatibus nostrum numquam optio perferendis praesentium qui quidem reprehenderit sint temporibus unde vel voluptate? Enim fugit illo laborum mollitia.</p>
+
+        {% for i in values %}
+                <span>{{ i|length }}</span>
+        {% endfor %}
+
+    </div>
+{% endblock content %}
